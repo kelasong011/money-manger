@@ -92,6 +92,8 @@ export default {
       this.income = null;
     } else {
       var tempIncome = JSON.parse(income);
+
+      //修改整合数据
       this.income = this.merge(tempIncome);
       this.income = this.income.reverse()
     }
@@ -99,6 +101,8 @@ export default {
       this.output = null;
     } else {
       var tempOutput = JSON.parse(output);
+
+      //修改整合数据
       this.output = this.merge(tempOutput);
       this.output = this.output.reverse()
     }
@@ -154,6 +158,7 @@ export default {
         }
       }
       result.push(oneDayJSON);
+      console.log(result)
       return result;
     },
     aryToString(ary) {

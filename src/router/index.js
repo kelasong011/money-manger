@@ -4,6 +4,8 @@ import Router from 'vue-router'
 import Record from '../pages/Record.vue'
 import Stastic from '../pages/Stastic.vue'
 import Tag from '../pages/Tag.vue'
+import Edit from '../pages/Edit.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -22,5 +24,9 @@ export default new Router({
   }, {
     path: '/',
     redirect: '/record'
+  },{
+    path:'/edit',
+    name:'Edit',
+    component:Edit
   }]
 })
